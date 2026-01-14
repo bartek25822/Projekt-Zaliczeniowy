@@ -1,0 +1,32 @@
+Inspiracje (słowa, skojarzenia, pomysły):
+- trasy, waypointy, fale, ekonomia, zasięg, DPS
+- proste UI, szybkie decyzje, czytelność
+
+Krótka lista elementów projektu:
+- mapa 3D z jedną ścieżką wrogów i polami pod budowę
+- system fal (Wave Manager) + spawner
+- wrogowie: ruch po waypointach, HP, różne prędkości/typy
+- wieże: wybór celu, obrót, strzał pociskami
+- ekonomia: gold za zabicie, koszt stawiania/ulepszania, sprzedaż
+- baza: HP, przegrana po spadku do 0
+- UI: gold, fala, HP bazy, przyciski budowania, pauza
+
+Wstępne dane wejściowe:
+- typy wież:
+  1) Cannon: wolno strzela, duży damage
+  2) Rapid: szybko strzela, mniejszy damage
+  3) Slow: nakłada spowolnienie na wroga
+- typy wrogów:
+  1) Basic: średnie HP, średnia prędkość
+  2) Fast: małe HP, duża prędkość
+  3) Tank: duże HP, mała prędkość
+- przykładowe wartości:
+  - start gold: 100
+  - cannon koszt: 50, rapid koszt: 40, slow koszt: 60
+  - nagroda za wroga: 5–20 (zależnie od typu)
+  - liczba fal: 10 (rosnąca trudność)
+
+Źródła pomysłu:
+- własna potrzeba zrobienia małej gry do portfolio w Unity
+- klasyczne tower defense
+- obserwacje: najlepiej działa prosta pętla “buduj -> fala -> nagroda”

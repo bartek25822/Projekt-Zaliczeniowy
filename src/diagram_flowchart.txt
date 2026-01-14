@@ -1,0 +1,67 @@
+               ┌─────────────┐                                         
+               │    START    │                                         
+               └──────┬──────┘                                         
+                      │                                                
+        ┌─────────────▼─────────────┐                                  
+        │        MENU GŁÓWNE        │                                  
+        │                           │                                  
+        │ [Start] [Opcje] [Wyjście] │                                  
+        └─────────────┬─────────────┘                                  
+                      │                                                
+               ┌──────▼──────┐                                         
+               │ Wybór mapy  │                                         
+               └──────┬──────┘                                         
+                      │                                                
+            ┌─────────▼─────────┐                                      
+            │  PĘTLA ROZGRYWKI  │                                      
+            │                   │                                      
+            └─┬───────────────┬─┘                                      
+              │               │                                        
+┌─────────────▼─────┐   ┌─────▼─────────────┐                          
+│FAZA PRZYGOTOWANIA │   │FAZA FALI          │                          
+│- Buduj wieże      │   │- Start fali       │                          
+│- ulepsz/sprzedaj  │   │- Spawn wrogów     │                          
+│- planuj ustawienie│   │- Walka            │                          
+└─────────────┬─────┘   └─────┬─────────────┘                          
+              │               │                                        
+          ┌───▼───────────────▼───┐                                    
+          │      RUCH WROGÓW      │                                    
+          │- Przejście po punktach│                                    
+          │- Dotarł do bazy?      │                                    
+          └─┬───────────────────┬─┘                                    
+         NIE│                   │TAK                                   
+            │                   │                                      
+┌───────────▼───────┐   ┌───────▼───────────┐                          
+│     ATAK WIEŻ     │   │OBRAŻENIA BAZY     │                          
+│- Wybór celu       │   │- HP bazy -= DMG   │                          
+│- Obrót do celu    │   │- Usuń wroga       │                          
+│- Strzał           │   └───────┬───────────┘                          
+│- Obrażenia        │           │                                      
+└───────────┬───────┘   ┌───────▼───────────┐                          
+            │           │   HP BAZY <= 0    │                          
+┌───────────▼───────┐   └─┬───────────────┬─┘                          
+│   ŚMIERĆ WROGA    │     │TAK         NIE│                            
+│- Wroga HP <= 0    │     │               │                            
+│- Nagroda gold     │   ┌─▼─────────┐     │                            
+│- Usuń wroga       │   │ PRZEGRANA │     │                            
+└───────────┬───────┘   └───────────┘     │                            
+            │                             │                            
+┌───────────▼───────┐                     │                            
+│   KONIEC FALI?    │                     │                            
+│- Brak wrogów      │   ┌─────────────────▼─┐                          
+│- Spawn zakończony │   │   KONTYNUUJ FALE  │                          
+└───────────┬───────┘   └───────┬───────────┘                          
+            │TAK                │                                      
+┌───────────▼───────┐   ┌───────▼───────────┐                          
+│  OSTATNIA FALA?   │   │KONIEC FALI        │                          
+└─┬───────────────┬─┘   │- Dodaj nagrody    │                          
+  │TAK         NIE│     │- Zwiększ nr fali  │                          
+  │               │     └───────┬───────────┘                          
+┌─▼─────────────┐ │             │                                      
+│    WYGRANA    │ │             │                                      
+│- ekran wyniku │ │             │                                      
+└───────────────┘ │             │                                      
+                  │             │                                      
+┌─────────────────▼─┐   ┌───────▼───────────┐                          
+│    PĘTLA TRWA     │   │FAZA PRZYGOTOWANIA │                          
+└───────────────────┘   └───────────────────┘                          
